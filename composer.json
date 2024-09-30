@@ -1,0 +1,19 @@
+{
+    "name": "app/gpec-bundle",
+    "version": "1.0.0",
+    "description": "Gpec service in PHP Symfony apps through soap service",
+    "type": "symfony-bundle",
+    "require": {
+        "php": ">=8.2",
+        "symfony/framework-bundle": "^7.1",
+        "phpro/soap-client": "^3.3",
+        "nyholm/psr7": "^1.8",
+        "symfony/http-client": "7.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\GpecBundle\\": "src/"
+        }
+    },  
+    "license": "MIT"
+}
