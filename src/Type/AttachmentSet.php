@@ -1,27 +1,27 @@
 <?php
 
-namespace App\GpecBundle\Type;
+namespace Gpec\GpecBundle\Type;
 
 class AttachmentSet
 {
     /**
-     * @var null | \App\GpecBundle\Type\ArrayOfAttachment
+     * @var null | \Gpec\GpecBundle\Type\ArrayOfAttachment
      */
-    private ?\App\GpecBundle\Type\ArrayOfAttachment $attachments = null;
+    private ?\Gpec\GpecBundle\Type\ArrayOfAttachment $attachments = null;
 
     /**
-     * @return null | \App\GpecBundle\Type\ArrayOfAttachment
+     * @return null | \Gpec\GpecBundle\Type\ArrayOfAttachment
      */
-    public function getAttachments() : ?\App\GpecBundle\Type\ArrayOfAttachment
+    public function getAttachments() : ?\Gpec\GpecBundle\Type\ArrayOfAttachment
     {
         return $this->attachments;
     }
 
     /**
-     * @param null | \App\GpecBundle\Type\ArrayOfAttachment $attachments
+     * @param null | \Gpec\GpecBundle\Type\ArrayOfAttachment $attachments
      * @return static
      */
-    public function withAttachments(?\App\GpecBundle\Type\ArrayOfAttachment $attachments) : static
+    public function withAttachments(?\Gpec\GpecBundle\Type\ArrayOfAttachment $attachments) : static
     {
         $new = clone $this;
         $new->attachments = $attachments;

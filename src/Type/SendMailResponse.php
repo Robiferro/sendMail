@@ -1,15 +1,15 @@
 <?php
 
-namespace App\GpecBundle\Type;
+namespace Gpec\GpecBundle\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
 class SendMailResponse implements ResultInterface
 {
     /**
-     * @var null | \App\GpecBundle\Type\SendMailResponse
+     * @var null | \Gpec\GpecBundle\Type\SendMailResponse
      */
-    private ?\App\GpecBundle\Type\SendMailResponse $SendMailResponse = null;
+    private ?\Gpec\GpecBundle\Type\SendMailResponse $SendMailResponse = null;
 
     /**
      * @var null | string
@@ -17,18 +17,18 @@ class SendMailResponse implements ResultInterface
     private ?string $id = null;
 
     /**
-     * @return null | \App\GpecBundle\Type\SendMailResponse
+     * @return null | \Gpec\GpecBundle\Type\SendMailResponse
      */
-    public function getSendMailResponse() : ?\App\GpecBundle\Type\SendMailResponse
+    public function getSendMailResponse() : ?\Gpec\GpecBundle\Type\SendMailResponse
     {
         return $this->SendMailResponse;
     }
 
     /**
-     * @param null | \App\GpecBundle\Type\SendMailResponse $SendMailResponse
+     * @param null | \Gpec\GpecBundle\Type\SendMailResponse $SendMailResponse
      * @return static
      */
-    public function withSendMailResponse(?\App\GpecBundle\Type\SendMailResponse $SendMailResponse) : static
+    public function withSendMailResponse(?\Gpec\GpecBundle\Type\SendMailResponse $SendMailResponse) : static
     {
         $new = clone $this;
         $new->SendMailResponse = $SendMailResponse;

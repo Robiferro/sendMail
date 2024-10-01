@@ -1,8 +1,8 @@
 <?php
 
-namespace App\GpecBundle\Type;
+namespace Gpec\GpecBundle\Type;
 
-use \App\GpecBundle\Type\MessageInfoSender;
+use \Gpec\GpecBundle\Type\MessageInfoSender;
 
 class MessageInfo extends MessageInfoSender
 {

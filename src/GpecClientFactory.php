@@ -1,9 +1,9 @@
 <?php
 
-namespace App\GpecBundle;
+namespace Gpec\GpecBundle;
 
-use App\GpecBundle\GpecClient;
-use App\GpecBundle\GpecClassmap;
+use Gpec\GpecBundle\GpecClient;
+use Gpec\GpecBundle\GpecClassmap;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Phpro\SoapClient\Soap\DefaultEngineFactory;
 use Soap\ExtSoapEngine\ExtSoapOptions;
@@ -38,4 +38,3 @@ class GpecClientFactory
         return new GpecClient($caller, $engine, $nativeSoapClient);
     }
 }
-

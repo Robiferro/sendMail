@@ -1,11 +1,11 @@
 <?php
 
-namespace App\GpecBundle;
+namespace Gpec\GpecBundle;
 
 use Phpro\SoapClient\Caller\Caller;
-use App\GpecBundle\Type;
-use App\GpecBundle\Type\OperationResult;
-use App\GpecBundle\Type\SendMailResponse;
+use Gpec\GpecBundle\Type;
+use Gpec\GpecBundle\Type\OperationResult;
+use Gpec\GpecBundle\Type\SendMailResponse;
 use Phpro\SoapClient\Type\ResultInterface;
 use Phpro\SoapClient\Exception\SoapException;
 use Phpro\SoapClient\Type\MixedResult;
@@ -62,11 +62,11 @@ class GpecClient implements Caller
      * @return ResultInterface & Type\GetVersionResponse
      * @throws SoapException
      */
-    public function getVersion(\App\GpecBundle\Type\GetVersion $parameters): \App\GpecBundle\Type\GetVersionResponse
+    public function getVersion(\Gpec\GpecBundle\Type\GetVersion $parameters): \Gpec\GpecBundle\Type\GetVersionResponse
     {
         $response = ($this->caller)('getVersion', $parameters);
 
-        \Psl\Type\instance_of(\App\GpecBundle\Type\GetVersionResponse::class)->assert($response);
+        \Psl\Type\instance_of(\Gpec\GpecBundle\Type\GetVersionResponse::class)->assert($response);
         \Psl\Type\instance_of(\Phpro\SoapClient\Type\ResultInterface::class)->assert($response);
 
         return $response;
@@ -79,7 +79,7 @@ class GpecClient implements Caller
      * @return ResultInterface & Type\SendMailResponse
      * @throws SoapException
      */
-    public function sendMail(\App\GpecBundle\Type\SendMail $parameters): \App\GpecBundle\Type\SendMailResponse
+    public function sendMail(\Gpec\GpecBundle\Type\sendMail $parameters): \Gpec\GpecBundle\Type\SendMailResponse 
     {
         // $response = ($this->caller)('sendMail', $parameters);
 
@@ -162,11 +162,11 @@ class GpecClient implements Caller
      * @return ResultInterface & Type\DeleteMailResponse
      * @throws SoapException
      */
-    public function deleteMail(\App\GpecBundle\Type\DeleteMail $parameters): \App\GpecBundle\Type\DeleteMailResponse
+    public function deleteMail(\Gpec\GpecBundle\Type\DeleteMail $parameters): \Gpec\GpecBundle\Type\DeleteMailResponse
     {
         $response = ($this->caller)('deleteMail', $parameters);
 
-        \Psl\Type\instance_of(\App\GpecBundle\Type\DeleteMailResponse::class)->assert($response);
+        \Psl\Type\instance_of(\Gpec\GpecBundle\Type\DeleteMailResponse::class)->assert($response);
         \Psl\Type\instance_of(\Phpro\SoapClient\Type\ResultInterface::class)->assert($response);
 
         return $response;
@@ -179,11 +179,11 @@ class GpecClient implements Caller
      * @return ResultInterface & Type\GetMailCountResponse
      * @throws SoapException
      */
-    public function getMailCount(\App\GpecBundle\Type\GetMailCount $parameters): \App\GpecBundle\Type\GetMailCountResponse
+    public function getMailCount(\Gpec\GpecBundle\Type\GetMailCount $parameters): \Gpec\GpecBundle\Type\GetMailCountResponse
     {
         $response = ($this->caller)('getMailCount', $parameters);
 
-        \Psl\Type\instance_of(\App\GpecBundle\Type\GetMailCountResponse::class)->assert($response);
+        \Psl\Type\instance_of(\Gpec\GpecBundle\Type\GetMailCountResponse::class)->assert($response);
         \Psl\Type\instance_of(\Phpro\SoapClient\Type\ResultInterface::class)->assert($response);
 
         return $response;
@@ -196,11 +196,11 @@ class GpecClient implements Caller
      * @return ResultInterface & Type\GetMailByIdResponse
      * @throws SoapException
      */
-    public function getMailById(\App\GpecBundle\Type\GetMailById $parameters): \App\GpecBundle\Type\GetMailByIdResponse
+    public function getMailById(\Gpec\GpecBundle\Type\GetMailById $parameters): \Gpec\GpecBundle\Type\GetMailByIdResponse
     {
         $response = ($this->caller)('getMailById', $parameters);
 
-        \Psl\Type\instance_of(\App\GpecBundle\Type\GetMailByIdResponse::class)->assert($response);
+        \Psl\Type\instance_of(\Gpec\GpecBundle\Type\GetMailByIdResponse::class)->assert($response);
         \Psl\Type\instance_of(\Phpro\SoapClient\Type\ResultInterface::class)->assert($response);
 
         return $response;
@@ -213,11 +213,11 @@ class GpecClient implements Caller
      * @return ResultInterface & Type\GetMailsAndReceiptsResponse
      * @throws SoapException
      */
-    public function getMailsAndReceipts(\App\GpecBundle\Type\GetMailsAndReceipts $parameters): \App\GpecBundle\Type\GetMailsAndReceiptsResponse
+    public function getMailsAndReceipts(\Gpec\GpecBundle\Type\GetMailsAndReceipts $parameters): \Gpec\GpecBundle\Type\GetMailsAndReceiptsResponse
     {
         $response = ($this->caller)('getMailsAndReceipts', $parameters);
 
-        \Psl\Type\instance_of(\App\GpecBundle\Type\GetMailsAndReceiptsResponse::class)->assert($response);
+        \Psl\Type\instance_of(\Gpec\GpecBundle\Type\GetMailsAndReceiptsResponse::class)->assert($response);
         \Psl\Type\instance_of(\Phpro\SoapClient\Type\ResultInterface::class)->assert($response);
 
         return $response;
@@ -230,11 +230,11 @@ class GpecClient implements Caller
      * @return ResultInterface & Type\GetMailsResponse
      * @throws SoapException
      */
-    public function getMails(\App\GpecBundle\Type\GetMails $parameters): \App\GpecBundle\Type\GetMailsResponse
+    public function getMails(\Gpec\GpecBundle\Type\GetMails $parameters): \Gpec\GpecBundle\Type\GetMailsResponse
     {
         $response = ($this->caller)('getMails', $parameters);
 
-        \Psl\Type\instance_of(\App\GpecBundle\Type\GetMailsResponse::class)->assert($response);
+        \Psl\Type\instance_of(\Gpec\GpecBundle\Type\GetMailsResponse::class)->assert($response);
         \Psl\Type\instance_of(\Phpro\SoapClient\Type\ResultInterface::class)->assert($response);
 
         return $response;
@@ -247,11 +247,11 @@ class GpecClient implements Caller
      * @return ResultInterface & Type\GetMailsFromResponse
      * @throws SoapException
      */
-    public function getMailsFrom(\App\GpecBundle\Type\GetMailsFrom $parameters): \App\GpecBundle\Type\GetMailsFromResponse
+    public function getMailsFrom(\Gpec\GpecBundle\Type\GetMailsFrom $parameters): \Gpec\GpecBundle\Type\GetMailsFromResponse
     {
         $response = ($this->caller)('getMailsFrom', $parameters);
 
-        \Psl\Type\instance_of(\App\GpecBundle\Type\GetMailsFromResponse::class)->assert($response);
+        \Psl\Type\instance_of(\Gpec\GpecBundle\Type\GetMailsFromResponse::class)->assert($response);
         \Psl\Type\instance_of(\Phpro\SoapClient\Type\ResultInterface::class)->assert($response);
 
         return $response;
@@ -264,11 +264,11 @@ class GpecClient implements Caller
      * @return ResultInterface & Type\GetMailsToResponse
      * @throws SoapException
      */
-    public function getMailsTo(\App\GpecBundle\Type\GetMailsTo $parameters): \App\GpecBundle\Type\GetMailsToResponse
+    public function getMailsTo(\Gpec\GpecBundle\Type\GetMailsTo $parameters): \Gpec\GpecBundle\Type\GetMailsToResponse
     {
         $response = ($this->caller)('getMailsTo', $parameters);
 
-        \Psl\Type\instance_of(\App\GpecBundle\Type\GetMailsToResponse::class)->assert($response);
+        \Psl\Type\instance_of(\Gpec\GpecBundle\Type\GetMailsToResponse::class)->assert($response);
         \Psl\Type\instance_of(\Phpro\SoapClient\Type\ResultInterface::class)->assert($response);
 
         return $response;
@@ -281,11 +281,11 @@ class GpecClient implements Caller
      * @return ResultInterface & Type\GetMailsRangeResponse
      * @throws SoapException
      */
-    public function getMailsRange(\App\GpecBundle\Type\GetMailsRange $parameters): \App\GpecBundle\Type\GetMailsRangeResponse
+    public function getMailsRange(\Gpec\GpecBundle\Type\GetMailsRange $parameters): \Gpec\GpecBundle\Type\GetMailsRangeResponse
     {
         $response = ($this->caller)('getMailsRange', $parameters);
 
-        \Psl\Type\instance_of(\App\GpecBundle\Type\GetMailsRangeResponse::class)->assert($response);
+        \Psl\Type\instance_of(\Gpec\GpecBundle\Type\GetMailsRangeResponse::class)->assert($response);
         \Psl\Type\instance_of(\Phpro\SoapClient\Type\ResultInterface::class)->assert($response);
 
         return $response;
@@ -298,11 +298,11 @@ class GpecClient implements Caller
      * @return ResultInterface & Type\MoveMessageResponse
      * @throws SoapException
      */
-    public function moveMessage(\App\GpecBundle\Type\MoveMessage $parameters): \App\GpecBundle\Type\MoveMessageResponse
+    public function moveMessage(\Gpec\GpecBundle\Type\MoveMessage $parameters): \Gpec\GpecBundle\Type\MoveMessageResponse
     {
         $response = ($this->caller)('moveMessage', $parameters);
 
-        \Psl\Type\instance_of(\App\GpecBundle\Type\MoveMessageResponse::class)->assert($response);
+        \Psl\Type\instance_of(\Gpec\GpecBundle\Type\MoveMessageResponse::class)->assert($response);
         \Psl\Type\instance_of(\Phpro\SoapClient\Type\ResultInterface::class)->assert($response);
 
         return $response;

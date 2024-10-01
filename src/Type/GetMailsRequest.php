@@ -1,8 +1,8 @@
 <?php
 
-namespace App\GpecBundle\Type;
+namespace Gpec\GpecBundle\Type;
 
-use \App\GpecBundle\Type\GetMailRequest;
+use \Gpec\GpecBundle\Type\GetMailRequest;
 
 class GetMailsRequest extends GetMailRequest
 {

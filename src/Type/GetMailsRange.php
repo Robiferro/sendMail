@@ -1,39 +1,39 @@
 <?php
 
-namespace App\GpecBundle\Type;
+namespace Gpec\GpecBundle\Type;
 
 use Phpro\SoapClient\Type\RequestInterface;
 
 class GetMailsRange implements RequestInterface
 {
     /**
-     * @var \App\GpecBundle\Type\GetMailsRangeRequest
+     * @var \Gpec\GpecBundle\Type\GetMailsRangeRequest
      */
-    private \App\GpecBundle\Type\GetMailsRangeRequest $GetMailsFromDateToDateRequest;
+    private \Gpec\GpecBundle\Type\GetMailsRangeRequest $GetMailsFromDateToDateRequest;
 
     /**
      * Constructor
      *
-     * @param \App\GpecBundle\Type\GetMailsRangeRequest $GetMailsFromDateToDateRequest
+     * @param \Gpec\GpecBundle\Type\GetMailsRangeRequest $GetMailsFromDateToDateRequest
      */
-    public function __construct(\App\GpecBundle\Type\GetMailsRangeRequest $GetMailsFromDateToDateRequest)
+    public function __construct(\Gpec\GpecBundle\Type\GetMailsRangeRequest $GetMailsFromDateToDateRequest)
     {
         $this->GetMailsFromDateToDateRequest = $GetMailsFromDateToDateRequest;
     }
 
     /**
-     * @return \App\GpecBundle\Type\GetMailsRangeRequest
+     * @return \Gpec\GpecBundle\Type\GetMailsRangeRequest
      */
-    public function getGetMailsFromDateToDateRequest() : \App\GpecBundle\Type\GetMailsRangeRequest
+    public function getGetMailsFromDateToDateRequest() : \Gpec\GpecBundle\Type\GetMailsRangeRequest
     {
         return $this->GetMailsFromDateToDateRequest;
     }
 
     /**
-     * @param \App\GpecBundle\Type\GetMailsRangeRequest $GetMailsFromDateToDateRequest
+     * @param \Gpec\GpecBundle\Type\GetMailsRangeRequest $GetMailsFromDateToDateRequest
      * @return static
      */
-    public function withGetMailsFromDateToDateRequest(\App\GpecBundle\Type\GetMailsRangeRequest $GetMailsFromDateToDateRequest) : static
+    public function withGetMailsFromDateToDateRequest(\Gpec\GpecBundle\Type\GetMailsRangeRequest $GetMailsFromDateToDateRequest) : static
     {
         $new = clone $this;
         $new->GetMailsFromDateToDateRequest = $GetMailsFromDateToDateRequest;

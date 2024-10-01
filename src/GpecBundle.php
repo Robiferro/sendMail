@@ -1,10 +1,10 @@
 <?php
-namespace App\GpecBundle;
+namespace Gpec\GpecBundle;
 
 
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
-use App\GpecBundle\DependencyInjection\GpecBundleExtension;
+use Gpec\GpecBundle\DependencyInjection\GpecBundleExtension;
 
 /**
  * SecurityHeadersBundle

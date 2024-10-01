@@ -1,14 +1,14 @@
 <?php
 
-namespace App\GpecBundle\Service;
+namespace Gpec\GpecBundle\Service;
 
-use App\GpecBundle\DTO\MailData;
-use App\GpecBundle\GpecClient;
-use App\GpecBundle\GpecClientFactory;
-use App\GpecBundle\Type\SendMail;
-use App\GpecBundle\Type\SendMailRequest;
-use App\GpecBundle\Type\MessageInfoSender;
-use App\GpecBundle\Type\Client;
+use Gpec\GpecBundle\DTO\MailData;
+use Gpec\GpecBundle\GpecClient;
+use Gpec\GpecBundle\GpecClientFactory;
+use Gpec\GpecBundle\Type\SendMail;
+use Gpec\GpecBundle\Type\Client;
+use Gpec\GpecBundle\Type\MessageInfoSender;
+use Gpec\GpecBundle\Type\SendMailRequest;
 
 class GpecService
 {

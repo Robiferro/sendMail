@@ -8,16 +8,16 @@ use Phpro\SoapClient\Soap\CodeGeneratorEngineFactory;
 
 return Config::create()
     ->setEngine($engine = CodeGeneratorEngineFactory::create(
-        'GpecBundle/src/Resources/config/gpec.wsdl'
+        'http://localhost:8080/?WSDL'
     ))
     ->setTypeDestination('GpecBundle/src\Type')
-    ->setTypeNamespace('App/GpecBundle\Type')
+    ->setTypeNamespace('Gpec\Type')
     ->setClientDestination('GpecBundle/src')
     ->setClientName('GpecClient')
-    ->setClientNamespace('App\\GpecBundle')
+    ->setClientNamespace('Gpec')
     ->setClassMapDestination('GpecBundle/src')
     ->setClassMapName('GpecClassmap')
-    ->setClassMapNamespace('App\\GpecBundle')
+    ->setClassMapNamespace('Gpec')
     ->addRule(new Rules\AssembleRule(new Assembler\GetterAssembler(new Assembler\GetterAssemblerOptions())))
     ->addRule(new Rules\AssembleRule(new Assembler\ImmutableSetterAssembler(
         new Assembler\ImmutableSetterAssemblerOptions()

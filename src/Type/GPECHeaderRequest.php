@@ -1,6 +1,6 @@
 <?php
 
-namespace App\GpecBundle\Type;
+namespace Gpec\GpecBundle\Type;
 
 class GPECHeaderRequest
 {

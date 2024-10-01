@@ -1,34 +1,34 @@
 <?php
 
-namespace App\GpecBundle\Type;
+namespace Gpec\GpecBundle\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
 class GetMailsResponse implements ResultInterface
 {
     /**
-     * @var null | \App\GpecBundle\Type\GetMailsResponse
+     * @var null | \Gpec\GpecBundle\Type\GetMailsResponse
      */
-    private ?\App\GpecBundle\Type\GetMailsResponse $GetMailsResponse = null;
+    private ?\Gpec\GpecBundle\Type\GetMailsResponse $GetMailsResponse = null;
 
     /**
-     * @var null | \App\GpecBundle\Type\ArrayOfMessageInfo
+     * @var null | \Gpec\GpecBundle\Type\ArrayOfMessageInfo
      */
-    private ?\App\GpecBundle\Type\ArrayOfMessageInfo $messages = null;
+    private ?\Gpec\GpecBundle\Type\ArrayOfMessageInfo $messages = null;
 
     /**
-     * @return null | \App\GpecBundle\Type\GetMailsResponse
+     * @return null | \Gpec\GpecBundle\Type\GetMailsResponse
      */
-    public function getGetMailsResponse() : ?\App\GpecBundle\Type\GetMailsResponse
+    public function getGetMailsResponse() : ?\Gpec\GpecBundle\Type\GetMailsResponse
     {
         return $this->GetMailsResponse;
     }
 
     /**
-     * @param null | \App\GpecBundle\Type\GetMailsResponse $GetMailsResponse
+     * @param null | \Gpec\GpecBundle\Type\GetMailsResponse $GetMailsResponse
      * @return static
      */
-    public function withGetMailsResponse(?\App\GpecBundle\Type\GetMailsResponse $GetMailsResponse) : static
+    public function withGetMailsResponse(?\Gpec\GpecBundle\Type\GetMailsResponse $GetMailsResponse) : static
     {
         $new = clone $this;
         $new->GetMailsResponse = $GetMailsResponse;
@@ -37,18 +37,18 @@ class GetMailsResponse implements ResultInterface
     }
 
     /**
-     * @return null | \App\GpecBundle\Type\ArrayOfMessageInfo
+     * @return null | \Gpec\GpecBundle\Type\ArrayOfMessageInfo
      */
-    public function getMessages() : ?\App\GpecBundle\Type\ArrayOfMessageInfo
+    public function getMessages() : ?\Gpec\GpecBundle\Type\ArrayOfMessageInfo
     {
         return $this->messages;
     }
 
     /**
-     * @param null | \App\GpecBundle\Type\ArrayOfMessageInfo $messages
+     * @param null | \Gpec\GpecBundle\Type\ArrayOfMessageInfo $messages
      * @return static
      */
-    public function withMessages(?\App\GpecBundle\Type\ArrayOfMessageInfo $messages) : static
+    public function withMessages(?\Gpec\GpecBundle\Type\ArrayOfMessageInfo $messages) : static
     {
         $new = clone $this;
         $new->messages = $messages;

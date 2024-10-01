@@ -1,8 +1,8 @@
 services:
-    App\GpecBundle\GpecClientFactory:
+    Gpec\GpecBundle\GpecClientFactory:
         public: true
 
-    App\GpecBundle\Service\GpecService:
+    Gpec\GpecBundle\Service\GpecService:
         arguments:
-            $clientFactory: '@App\GpecBundle\GpecClientFactory'
+            $clientFactory: '@Gpec\GpecBundle\GpecClientFactory'
         public: true

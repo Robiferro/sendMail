@@ -1,6 +1,6 @@
 <?php
 
-namespace App\GpecBundle\Type;
+namespace Gpec\GpecBundle\Type;
 
 class MessageInfoSender
 {
@@ -50,14 +50,14 @@ class MessageInfoSender
     private string $priority;
 
     /**
-     * @var null | \App\GpecBundle\Type\AttachmentSet
+     * @var null | \Gpec\GpecBundle\Type\AttachmentSet
      */
-    private ?\App\GpecBundle\Type\AttachmentSet $attachments = null;
+    private ?\Gpec\GpecBundle\Type\AttachmentSet $attachments = null;
 
     /**
-     * @var null | \App\GpecBundle\Type\ArrayOfObjectHeaders
+     * @var null | \Gpec\GpecBundle\Type\ArrayOfObjectHeaders
      */
-    private ?\App\GpecBundle\Type\ArrayOfObjectHeaders $headers = null;
+    private ?\Gpec\GpecBundle\Type\ArrayOfObjectHeaders $headers = null;
 
     /**
      * @var 'ASCII' | 'UTF7' | 'UTF8' | 'Unicode' | 'UTF32'
@@ -245,18 +245,18 @@ class MessageInfoSender
     }
 
     /**
-     * @return null | \App\GpecBundle\Type\AttachmentSet
+     * @return null | \Gpec\GpecBundle\Type\AttachmentSet
      */
-    public function getAttachments() : ?\App\GpecBundle\Type\AttachmentSet
+    public function getAttachments() : ?\Gpec\GpecBundle\Type\AttachmentSet
     {
         return $this->attachments;
     }
 
     /**
-     * @param null | \App\GpecBundle\Type\AttachmentSet $attachments
+     * @param null | \Gpec\GpecBundle\Type\AttachmentSet $attachments
      * @return static
      */
-    public function withAttachments(?\App\GpecBundle\Type\AttachmentSet $attachments) : static
+    public function withAttachments(?\Gpec\GpecBundle\Type\AttachmentSet $attachments) : static
     {
         $new = clone $this;
         $new->attachments = $attachments;
@@ -265,18 +265,18 @@ class MessageInfoSender
     }
 
     /**
-     * @return null | \App\GpecBundle\Type\ArrayOfObjectHeaders
+     * @return null | \Gpec\GpecBundle\Type\ArrayOfObjectHeaders
      */
-    public function getHeaders() : ?\App\GpecBundle\Type\ArrayOfObjectHeaders
+    public function getHeaders() : ?\Gpec\GpecBundle\Type\ArrayOfObjectHeaders
     {
         return $this->headers;
     }
 
     /**
-     * @param null | \App\GpecBundle\Type\ArrayOfObjectHeaders $headers
+     * @param null | \Gpec\GpecBundle\Type\ArrayOfObjectHeaders $headers
      * @return static
      */
-    public function withHeaders(?\App\GpecBundle\Type\ArrayOfObjectHeaders $headers) : static
+    public function withHeaders(?\Gpec\GpecBundle\Type\ArrayOfObjectHeaders $headers) : static
     {
         $new = clone $this;
         $new->headers = $headers;

@@ -1,29 +1,29 @@
 <?php
 
-namespace App\GpecBundle\Type;
+namespace Gpec\GpecBundle\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
 class MoveMessageResponse implements ResultInterface
 {
     /**
-     * @var \App\GpecBundle\Type\MoveMessageResponse
+     * @var \Gpec\GpecBundle\Type\MoveMessageResponse
      */
-    private \App\GpecBundle\Type\MoveMessageResponse $MoveMessageResponse;
+    private \Gpec\GpecBundle\Type\MoveMessageResponse $MoveMessageResponse;
 
     /**
-     * @return \App\GpecBundle\Type\MoveMessageResponse
+     * @return \Gpec\GpecBundle\Type\MoveMessageResponse
      */
-    public function getMoveMessageResponse() : \App\GpecBundle\Type\MoveMessageResponse
+    public function getMoveMessageResponse() : \Gpec\GpecBundle\Type\MoveMessageResponse
     {
         return $this->MoveMessageResponse;
     }
 
     /**
-     * @param \App\GpecBundle\Type\MoveMessageResponse $MoveMessageResponse
+     * @param \Gpec\GpecBundle\Type\MoveMessageResponse $MoveMessageResponse
      * @return static
      */
-    public function withMoveMessageResponse(\App\GpecBundle\Type\MoveMessageResponse $MoveMessageResponse) : static
+    public function withMoveMessageResponse(\Gpec\GpecBundle\Type\MoveMessageResponse $MoveMessageResponse) : static
     {
         $new = clone $this;
         $new->MoveMessageResponse = $MoveMessageResponse;

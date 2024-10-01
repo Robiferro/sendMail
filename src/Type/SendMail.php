@@ -1,39 +1,39 @@
 <?php
 
-namespace App\GpecBundle\Type;
+namespace Gpec\GpecBundle\Type;
 
 use Phpro\SoapClient\Type\RequestInterface;
 
 class SendMail implements RequestInterface
 {
     /**
-     * @var \App\GpecBundle\Type\SendMailRequest
+     * @var \Gpec\GpecBundle\Type\SendMailRequest
      */
-    private \App\GpecBundle\Type\SendMailRequest $SendMailRequest;
+    private \Gpec\GpecBundle\Type\SendMailRequest $SendMailRequest;
 
     /**
      * Constructor
      *
-     * @param \App\GpecBundle\Type\SendMailRequest $SendMailRequest
+     * @param \Gpec\GpecBundle\Type\SendMailRequest $SendMailRequest
      */
-    public function __construct(\App\GpecBundle\Type\SendMailRequest $SendMailRequest)
+    public function __construct(\Gpec\GpecBundle\Type\SendMailRequest $SendMailRequest)
     {
         $this->SendMailRequest = $SendMailRequest;
     }
 
     /**
-     * @return \App\GpecBundle\Type\SendMailRequest
+     * @return \Gpec\GpecBundle\Type\SendMailRequest
      */
-    public function getSendMailRequest() : \App\GpecBundle\Type\SendMailRequest
+    public function getSendMailRequest() : \Gpec\GpecBundle\Type\SendMailRequest
     {
         return $this->SendMailRequest;
     }
 
     /**
-     * @param \App\GpecBundle\Type\SendMailRequest $SendMailRequest
+     * @param \Gpec\GpecBundle\Type\SendMailRequest $SendMailRequest
      * @return static
      */
-    public function withSendMailRequest(\App\GpecBundle\Type\SendMailRequest $SendMailRequest) : static
+    public function withSendMailRequest(\Gpec\GpecBundle\Type\SendMailRequest $SendMailRequest) : static
     {
         $new = clone $this;
         $new->SendMailRequest = $SendMailRequest;

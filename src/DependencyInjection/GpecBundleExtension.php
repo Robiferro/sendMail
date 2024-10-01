@@ -1,6 +1,6 @@
 <?php 
 
-namespace App\GpecBundle\DependencyInjection;
+namespace Gpec\GpecBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

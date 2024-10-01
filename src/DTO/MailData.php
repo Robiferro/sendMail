@@ -1,6 +1,6 @@
 <?php
 
-namespace App\GpecBundle\DTO;
+namespace Gpec\GpecBundle\DTO;
 
 class MailData
 {

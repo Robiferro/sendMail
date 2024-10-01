@@ -1,16 +1,16 @@
 <?php
 
-namespace App\GpecBundle\Type;
+namespace Gpec\GpecBundle\Type;
 
 class ArrayOfObjectHeaders
 {
     /**
-     * @var null | array<int<0,max>, \App\GpecBundle\Type\ObjectHeaders>
+     * @var null | array<int<0,max>, \Gpec\GpecBundle\Type\ObjectHeaders>
      */
     private ?array $ObjectHeaders = null;
 
     /**
-     * @return null | array<int<0,max>, \App\GpecBundle\Type\ObjectHeaders>
+     * @return null | array<int<0,max>, \Gpec\GpecBundle\Type\ObjectHeaders>
      */
     public function getObjectHeaders() : ?array
     {
@@ -18,7 +18,7 @@ class ArrayOfObjectHeaders
     }
 
     /**
-     * @param null | array<int<0,max>, \App\GpecBundle\Type\ObjectHeaders> $ObjectHeaders
+     * @param null | array<int<0,max>, \Gpec\GpecBundle\Type\ObjectHeaders> $ObjectHeaders
      * @return static
      */
     public function withObjectHeaders(?array $ObjectHeaders) : static

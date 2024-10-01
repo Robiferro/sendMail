@@ -1,8 +1,8 @@
 <?php
 
-namespace App\GpecBundle\Type;
+namespace Gpec\GpecBundle\Type;
 
-use \App\GpecBundle\Type\GetMailsResponse;
+use \Gpec\GpecBundle\Type\GetMailsResponse;
 
 class GetMailsFromDateToDateResponse extends GetMailsResponse
 {

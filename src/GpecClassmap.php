@@ -1,8 +1,8 @@
 <?php
 
-namespace App\GpecBundle;
+namespace Gpec\GpecBundle;
 
-use App\GpecBundle\Type;
+use Gpec\GpecBundle\Type;
 use Soap\ExtSoapEngine\Configuration\ClassMap\ClassMapCollection;
 use Soap\ExtSoapEngine\Configuration\ClassMap\ClassMap;
 
@@ -66,3 +66,4 @@ class GpecClassmap
         );
     }
 }
+

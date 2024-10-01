@@ -1,27 +1,27 @@
 <?php
 
-namespace App\GpecBundle\Type;
+namespace Gpec\GpecBundle\Type;
 
 class HeaderResponse
 {
     /**
-     * @var null | \App\GpecBundle\Type\OperationResult
+     * @var null | \Gpec\GpecBundle\Type\OperationResult
      */
-    private ?\App\GpecBundle\Type\OperationResult $operationResult = null;
+    private ?\Gpec\GpecBundle\Type\OperationResult $operationResult = null;
 
     /**
-     * @return null | \App\GpecBundle\Type\OperationResult
+     * @return null | \Gpec\GpecBundle\Type\OperationResult
      */
-    public function getOperationResult() : ?\App\GpecBundle\Type\OperationResult
+    public function getOperationResult() : ?\Gpec\GpecBundle\Type\OperationResult
     {
         return $this->operationResult;
     }
 
     /**
-     * @param null | \App\GpecBundle\Type\OperationResult $operationResult
+     * @param null | \Gpec\GpecBundle\Type\OperationResult $operationResult
      * @return static
      */
-    public function withOperationResult(?\App\GpecBundle\Type\OperationResult $operationResult) : static
+    public function withOperationResult(?\Gpec\GpecBundle\Type\OperationResult $operationResult) : static
     {
         $new = clone $this;
         $new->operationResult = $operationResult;

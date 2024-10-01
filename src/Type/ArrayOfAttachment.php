@@ -1,16 +1,16 @@
 <?php
 
-namespace App\GpecBundle\Type;
+namespace Gpec\GpecBundle\Type;
 
 class ArrayOfAttachment
 {
     /**
-     * @var null | array<int<0,max>, \App\GpecBundle\Type\Attachment>
+     * @var null | array<int<0,max>, \Gpec\GpecBundle\Type\Attachment>
      */
     private ?array $Attachment = null;
 
     /**
-     * @return null | array<int<0,max>, \App\GpecBundle\Type\Attachment>
+     * @return null | array<int<0,max>, \Gpec\GpecBundle\Type\Attachment>
      */
     public function getAttachment() : ?array
     {
@@ -18,7 +18,7 @@ class ArrayOfAttachment
     }
 
     /**
-     * @param null | array<int<0,max>, \App\GpecBundle\Type\Attachment> $Attachment
+     * @param null | array<int<0,max>, \Gpec\GpecBundle\Type\Attachment> $Attachment
      * @return static
      */
     public function withAttachment(?array $Attachment) : static

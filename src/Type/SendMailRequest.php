@@ -1,29 +1,29 @@
 <?php
 
-namespace App\GpecBundle\Type;
+namespace Gpec\GpecBundle\Type;
 
-use \App\GpecBundle\Type\BaseRequest;
+use \Gpec\GpecBundle\Type\BaseRequest;
 
 class SendMailRequest extends BaseRequest
 {
     /**
-     * @var null | \App\GpecBundle\Type\MessageInfoSender
+     * @var null | \Gpec\GpecBundle\Type\MessageInfoSender
      */
-    private ?\App\GpecBundle\Type\MessageInfoSender $message = null;
+    private ?\Gpec\GpecBundle\Type\MessageInfoSender $message = null;
 
     /**
-     * @return null | \App\GpecBundle\Type\MessageInfoSender
+     * @return null | \Gpec\GpecBundle\Type\MessageInfoSender
      */
-    public function getMessage() : ?\App\GpecBundle\Type\MessageInfoSender
+    public function getMessage() : ?\Gpec\GpecBundle\Type\MessageInfoSender
     {
         return $this->message;
     }
 
     /**
-     * @param null | \App\GpecBundle\Type\MessageInfoSender $message
+     * @param null | \Gpec\GpecBundle\Type\MessageInfoSender $message
      * @return static
      */
-    public function withMessage(?\App\GpecBundle\Type\MessageInfoSender $message) : static
+    public function withMessage(?\Gpec\GpecBundle\Type\MessageInfoSender $message) : static
     {
         $new = clone $this;
         $new->message = $message;

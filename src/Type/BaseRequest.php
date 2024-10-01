@@ -1,13 +1,13 @@
 <?php
 
-namespace App\GpecBundle\Type;
+namespace Gpec\GpecBundle\Type;
 
 abstract class BaseRequest
 {
     /**
-     * @var null | \App\GpecBundle\Type\Client
+     * @var null | \Gpec\GpecBundle\Type\Client
      */
-    private ?\App\GpecBundle\Type\Client $client = null;
+    private ?\Gpec\GpecBundle\Type\Client $client = null;
 
     /**
      * @var null | string
@@ -15,18 +15,18 @@ abstract class BaseRequest
     private ?string $folder = null;
 
     /**
-     * @return null | \App\GpecBundle\Type\Client
+     * @return null | \Gpec\GpecBundle\Type\Client
      */
-    public function getClient() : ?\App\GpecBundle\Type\Client
+    public function getClient() : ?\Gpec\GpecBundle\Type\Client
     {
         return $this->client;
     }
 
     /**
-     * @param null | \App\GpecBundle\Type\Client $client
+     * @param null | \Gpec\GpecBundle\Type\Client $client
      * @return static
      */
-    public function withClient(?\App\GpecBundle\Type\Client $client) : static
+    public function withClient(?\Gpec\GpecBundle\Type\Client $client) : static
     {
         $new = clone $this;
         $new->client = $client;

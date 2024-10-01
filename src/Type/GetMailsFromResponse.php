@@ -1,29 +1,29 @@
 <?php
 
-namespace App\GpecBundle\Type;
+namespace Gpec\GpecBundle\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
 class GetMailsFromResponse implements ResultInterface
 {
     /**
-     * @var null | \App\GpecBundle\Type\GetMailsFromResponse
+     * @var null | \Gpec\GpecBundle\Type\GetMailsFromResponse
      */
-    private ?\App\GpecBundle\Type\GetMailsFromResponse $GetMailsFromResponse = null;
+    private ?\Gpec\GpecBundle\Type\GetMailsFromResponse $GetMailsFromResponse = null;
 
     /**
-     * @return null | \App\GpecBundle\Type\GetMailsFromResponse
+     * @return null | \Gpec\GpecBundle\Type\GetMailsFromResponse
      */
-    public function getGetMailsFromResponse() : ?\App\GpecBundle\Type\GetMailsFromResponse
+    public function getGetMailsFromResponse() : ?\Gpec\GpecBundle\Type\GetMailsFromResponse
     {
         return $this->GetMailsFromResponse;
     }
 
     /**
-     * @param null | \App\GpecBundle\Type\GetMailsFromResponse $GetMailsFromResponse
+     * @param null | \Gpec\GpecBundle\Type\GetMailsFromResponse $GetMailsFromResponse
      * @return static
      */
-    public function withGetMailsFromResponse(?\App\GpecBundle\Type\GetMailsFromResponse $GetMailsFromResponse) : static
+    public function withGetMailsFromResponse(?\Gpec\GpecBundle\Type\GetMailsFromResponse $GetMailsFromResponse) : static
     {
         $new = clone $this;
         $new->GetMailsFromResponse = $GetMailsFromResponse;

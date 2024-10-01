@@ -1,5 +1,5 @@
 {
-    "name": "app/gpec-bundle",
+    "name": "gpec/gpec-bundle",
     "version": "1.0.0",
     "description": "Gpec service in PHP Symfony apps through soap service",
     "type": "symfony-bundle",
@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\GpecBundle\\": "src/"
+            "Gpec\\GpecBundle\\": "src/"
         }
     },  
     "license": "MIT"

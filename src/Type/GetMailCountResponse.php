@@ -1,15 +1,15 @@
 <?php
 
-namespace App\GpecBundle\Type;
+namespace Gpec\GpecBundle\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
 class GetMailCountResponse implements ResultInterface
 {
     /**
-     * @var null | \App\GpecBundle\Type\GetMailCountResponse
+     * @var null | \Gpec\GpecBundle\Type\GetMailCountResponse
      */
-    private ?\App\GpecBundle\Type\GetMailCountResponse $GetMailCountResponse = null;
+    private ?\Gpec\GpecBundle\Type\GetMailCountResponse $GetMailCountResponse = null;
 
     /**
      * @var int
@@ -17,18 +17,18 @@ class GetMailCountResponse implements ResultInterface
     private int $count;
 
     /**
-     * @return null | \App\GpecBundle\Type\GetMailCountResponse
+     * @return null | \Gpec\GpecBundle\Type\GetMailCountResponse
      */
-    public function getGetMailCountResponse() : ?\App\GpecBundle\Type\GetMailCountResponse
+    public function getGetMailCountResponse() : ?\Gpec\GpecBundle\Type\GetMailCountResponse
     {
         return $this->GetMailCountResponse;
     }
 
     /**
-     * @param null | \App\GpecBundle\Type\GetMailCountResponse $GetMailCountResponse
+     * @param null | \Gpec\GpecBundle\Type\GetMailCountResponse $GetMailCountResponse
      * @return static
      */
-    public function withGetMailCountResponse(?\App\GpecBundle\Type\GetMailCountResponse $GetMailCountResponse) : static
+    public function withGetMailCountResponse(?\Gpec\GpecBundle\Type\GetMailCountResponse $GetMailCountResponse) : static
     {
         $new = clone $this;
         $new->GetMailCountResponse = $GetMailCountResponse;
